@@ -1,0 +1,297 @@
+/** Money: Books, Finance. */
+import Books from "../../assets/ProductClassic/books.jpg"
+import Finance from "../../assets/ProductClassic/finance.jpg"
+
+import { FaBookBookmark, FaBuildingColumns, FaChartLine, FaChartPie, FaFileInvoiceDollar, FaFileShield, FaWandMagicSparkles } from "react-icons/fa6";
+
+export const books = {
+  slug: "books",
+  name: "Books",
+  group: "money",
+  icon: "book",
+  image: Books,
+  status: "live",
+  host: "books.gc.mw",
+  appUrl: "https://books.gc.mw",
+  tagline: "GST accounting without the double entry",
+  summary: "Create GST invoices, manage credit notes, prepare GSTR-1 drafts, reconcile bank statements and maintain an audit-ready ledger.",
+  metaTitle: "GST Accounting and Invoicing Software in India  GSTR-1, Credit Notes and Bank Reconciliation",
+  metaDescription:
+    "Growcord Books helps you issue GST invoices for goods and services, calculate CGST, SGST and IGST, manage credit notes, prepare GSTR-1 drafts with HSN summaries, reconcile CSV or PDF bank statements, schedule recurring invoices and maintain an audit-ready ledger.",
+  keywords: ["gst accounting software", "gst invoice software", "gstr-1 software", "bank reconciliation software india", "tally alternative", "zoho books alternative india"],
+  servicesData: [
+    {
+      id: 1,
+      title: "GST-Compliant Invoicing",
+      icon: <FaFileInvoiceDollar />,
+    },
+    {
+      id: 2,
+      title: "Auto GSTR-1 & Tax Filing",
+      icon: <FaFileShield />,
+    },
+    {
+      id: 3,
+      title: "Smart Bank Reconciliation",
+      icon: <FaBuildingColumns />,
+    },
+    {
+      id: 4,
+      title: "Audit-Ready General Ledger",
+      icon: <FaBookBookmark />,
+    },
+    {
+      id: 5,
+      title: "Real-Time P&L & Balance Sheet",
+      icon: <FaChartLine />,
+    },
+  ],
+  hero: {
+    eyebrow: "Growcord Books",
+    title: "Automate your daily accounting with",
+    highlight: "zero repetitive manual entries",
+    lede: "Orders, returns, vendor bills, and payroll flow straight into your balance sheet. Invoices calculate tax dynamically, GSTR-1 drafts compile from verified sales, and tamper-proof ledgers ensure your audit history stays clean and immutable.",
+  },
+  visual: "invoice",
+  facts: [
+    { value: "CGST · SGST · IGST", label: "automatically calculated from place of supply" },
+    { value: "GSTR-1", label: "draft includes credit notes and HSN summary" },
+    { value: "Gapless", label: "continuous invoice numbering within each financial year" },
+    { value: "0", label: "journal edits; corrections are made by reversal" },
+  ],
+  audience: {
+    persona: "For business owners and accountants who rely on desktop software or spreadsheets and lose valuable time re-entering sales, tracking down bank transactions and reconciling GST at month-end.",
+    needs: ["Create a GST invoice for products or services", "Import a bank statement and reconcile transactions", "Send invoices through WhatsApp and follow up on payments", "Prepare a GSTR-1 draft based on issued invoices", "Give your CA a reliable, traceable ledger"],
+  },
+  before: [
+    "Entering sales twice: first in the store system, then manually retyping them into accounting software",
+    "Dealing with confusing number gaps and accidental duplicate tax invoices before every GST filing",
+    "Matching bank deposits and gateway settlements manually, line by tedious line against bank PDFs",
+    "Issuing manual credit notes that fail to reverse the original GST rates and HSN codes correctly",
+  ],
+  after: [
+    "Orders, customer refunds, and vendor purchase bills flowing straight into your ledger automatically",
+    "Assigning tamper-proof sequential numbering the exact moment each tax document is finalized",
+    "Uploading encrypted bank statements and reviewing AI-suggested transaction matches in seconds",
+    "Generating audit-ready credit notes directly linked to the original invoice line items with exact GST splits",
+  ],
+  features: [
+    { icon: "file", title: "Invoices for every kind of sale", text: "Create invoices for goods, services, plans and usagenot just store orders. Totals are calculated as you enter the details." },
+    { icon: "refresh", title: "Entries flow in from across Growcord", text: "Store orders, refunds, stock receipts, supplier bills and payroll automatically generate the relevant journal entries." },
+    { icon: "fileCheck", title: "GSTR-1 drafts, ready for review", text: "Draft B2B and B2C invoice details, credit notes for Table 9B, and the HSN/SAC summary directly from issued documents." },
+    { icon: "receipt", title: "Credit notes that match the original invoice", text: "Credit notes use the original invoice lines to reverse the GST actually charged. The system prevents credits that exceed the original amount." },
+    { icon: "bank", title: "Bank reconciliation", text: "Upload CSV files or password-protected PDF statements. Matching rules suggest likely transactions, and you can review and confirm them in batches." },
+    { icon: "send", title: "Send invoices and follow up on payment", text: "Send invoice PDFs by email or WhatsApp in a single step. Overdue invoices can trigger a payment-reminder workflow." },
+    { icon: "history", title: "Recurring invoices", text: "Schedule invoices for retainers and subscriptions, with each number assigned when the invoice is issued." },
+    { icon: "database", title: "Bring your existing records", text: "Import your accountant’s invoice register or migrate from Zoho Books while preserving original invoice numbers." },
+  ],
+  spotlights: [
+    {
+      eyebrow: "GST reporting, prepared from your records",
+      title: "Month-end GST built from",
+      highlight: "documents you have already issued",
+      text: "Books uses issued invoices and credit notesincluding invoices created outside the storeto prepare GSTR-1 tables and the HSN/SAC summary. It also runs compliance checks before your CA reviews and files the return.",
+      points: ["Credit notes are reflected automatically in the HSN summary", "GST rates follow their effective dates, preserving earlier transactions", "Place of supply determines whether CGST and SGST or IGST applies"],
+      visual: { kind: "gst" },
+    },
+    {
+      eyebrow: "A clear, traceable ledger",
+      title: "Journal entries that",
+      highlight: "can’t be altered without a trace",
+      text: "Every journal balances, corrections are made through reversals, and changes are preserved in a hash-chained audit trail. Your accountant can see what happened and when, with the history available for audit.",
+      points: ["Trial balance generated from locked journal entries", "Automatic posting enabled after your CA reviews it", "Continuous numbering across each document series"],
+      visual: { kind: "ledger" },
+    },
+  ],
+  steps: [
+    { title: "Set up your business details", text: "Enter your GSTIN, state, invoice-numbering series and opening balances." },
+    { title: "Connect your sales channels", text: "Store orders and counter sales post automatically. You can create other invoices as needed." },
+    { title: "Reconcile your bank accounts", text: "Upload statements, review suggested matches and record the remaining transactions." },
+    { title: "Prepare your month-end records", text: "Share the GSTR-1 draft, HSN summary and trial balance with your CA." },
+  ],
+  connects: [
+    { slug: "commerce", for: "Orders and refunds flow into invoices and credit notes" },
+    { slug: "make", for: "Supplier bills, goods-received clearing and costing entries" },
+    { slug: "people", for: "Payroll entries for each salary run" },
+    { slug: "finance", for: "Bank statements, expenses and owner accounts" },
+    { slug: "comms", for: "Invoices and payment reminders by WhatsApp and email" },
+    { slug: "retail", for: "Counter sales recorded as GST documents" },
+  ],
+  compare: {
+    them: "Traditional desktop accounting tools",
+    rows: [
+      ["Store sales post to accounts automatically", true, "Manual entry"],
+      ["Invoices for services, plans and usage", true, true],
+      ["Credit notes created from original invoice lines", true, "Manual"],
+      ["PDF bank statements supported, including password-protected files", true, false],
+      ["Locked journal entries with an audit trail", true, "Editable"],
+      ["Send an invoice on WhatsApp in one step", true, false],
+    ],
+  },
+  principles: [
+    { icon: "hash", title: "Numbers assigned when issued", text: "Invoice numbers are assigned only when a document is issued. Drafts and previews do not use up numbers." },
+    { icon: "undo", title: "Correct by reversal, not by editing", text: "Correct errors with reversing entries, preserving the full transaction history." },
+    { icon: "calendar", title: "GST rates follow effective dates", text: "The system applies the statutory rate in effect on the document date, so later GST changes do not alter past records." },
+    { icon: "userCheck", title: "Your CA stays in control", text: "Automatic posting and filing workflows are enabled only with your accountant’s approval." },
+  ],
+  roadmap: ["E-invoice (IRP) and direct GST filing", "TDS and TCS", "Multi-entity consolidation"],
+  pricing: { title: "Part of your Growcord organisation", text: "Invoicing and accounting are included with your store. If you need accounting on its own, get in touch with us.", cta: { label: "Talk to sales", href: "/contact-us?interest=books" } },
+  faqs: [
+    { q: "Can I create GST invoices for services as well as products?", a: "Yes. Books supports tax invoices for goods, services, subscriptions and usage. Add the relevant SAC or HSN codes, and GST is calculated according to the place of supply." },
+    { q: "Does it prepare GSTR-1?", a: "Books prepares GSTR-1 drafts from issued invoices and credit notes, including B2B and B2C details, Table 9B credit notes and the HSN/SAC summary. Your CA can review the draft before filing." },
+    { q: "Can I upload a password-protected bank statement PDF?", a: "Yes. Upload a CSV or PDF statement and save its password for that account. Future statements can then be opened without entering it again. A processing report lists the rows read and the balance checks performed." },
+    { q: "Can journals be edited?", a: "No. Journal entries cannot be edited; corrections are made by reversal. Each change is preserved in a hash-chained audit trail." },
+    { q: "Can I move from Zoho Books or another system?", a: "Yes. You can import data from Zoho Books while retaining original invoice numbers, or upload an invoice register prepared by your accountant." },
+    { q: "Do store orders create invoices automatically?", a: "Yes. Orders, refunds and stock movements in Growcord Commerce generate the corresponding invoices, credit notes and journal entries automatically." },
+  ],
+};
+
+export const finance = {
+  slug: "finance",
+  name: "Finance",
+  group: "money",
+  icon: "wallet",
+  image: Finance,
+  status: "beta",
+  host: "finance.gc.mw",
+  appUrl: "https://finance.gc.mw",
+  tagline: "A clearer view of your money, across every account",
+  summary: "Bring personal and business accounts together, upload bank statements, track expenses and create straightforward invoices.",
+  metaTitle: "Personal and Business Finance Dashboard for Business Owners  Statements and Expenses",
+  metaDescription:
+    "Growcord Finance brings your personal and business bank accounts into one view. Upload PDF or CSV statements, including password-protected files, review every processed row, categorise transactions with rules, track expenses and create invoices.",
+  keywords: ["bank statement analyser", "personal finance dashboard india", "expense tracker for business", "proprietor accounting", "pdf bank statement to excel"],
+  servicesData: [
+    {
+      id: 1,
+      title: "Unified Multi-Bank View",
+      icon: <FaBuildingColumns />,
+    },
+    {
+      id: 2,
+      title: "Smart Statement Parsing",
+      icon: <FaFileShield />,
+    },
+    {
+      id: 3,
+      title: "Automated Rule Categorisation",
+      icon: <FaWandMagicSparkles />,
+    },
+    {
+      id: 4,
+      title: "Expense & Spend Tracking",
+      icon: <FaChartPie />,
+    },
+    {
+      id: 5,
+      title: "Instant Invoice Generation",
+      icon: <FaFileInvoiceDollar />,
+    },
+  ],
+  hero: {
+    eyebrow: "Growcord Finance · Beta",
+    title: "Unify every bank account into",
+    highlight: "one clear financial view",
+    lede: "Connect business current accounts, personal savings, and credit cards in a single feed. Drop password protected PDF or CSV statements to auto extract every line item, verify closing balances, and prep transactions for instant bookkeeping.",
+  },
+  visual: "reconcile",
+  facts: [
+    { value: "PDF + CSV", label: "PDF and CSV statement uploads" },
+    { value: "Locked PDFs", label: "opened using your saved password" },
+    { value: "Every row", label: "clearly marked as read, retained or skipped" },
+    { value: "2 scopes", label: "personal and business accounts in one view" },
+  ],
+  audience: {
+    persona: "For business owners and founders who use several banks and cards for personal and business spending and want a clear, consolidated view without adding more bookkeeping work.",
+    needs: ["View all account balances together", "Upload password-protected statements directly", "See whether any transaction was skipped", "Keep personal and business spending separate", "Share organised records with your CA"],
+  },
+  before: [
+    "Statements scattered across multiple banking portals and mobile apps with no central view",
+    "Locked PDF statements requiring manual password unlocking and tedious row-by-row data re-entry",
+    "Personal expenses and business operating transactions tangled together in the same ledger",
+    "No clear record or audit log showing which statement transactions were skipped or dropped",
+  ],
+  after: [
+    "One consolidated command center displaying live balances across every card and bank account",
+    "Securely vaulting the PDF password once so files unlock and parse automatically without exposing credentials",
+    "Clearly isolating personal spending from business cash flows with strict account-level tags",
+    "Generating a detailed processing report with opening and closing balance checks for every upload",
+  ],
+  features: [
+    { icon: "bank", title: "All your accounts, together", text: "Manage bank, cash and card accounts, record opening balances and label each account as personal or business." },
+    { icon: "file", title: "PDF statements", text: "Upload the PDF statement from your bank directly; there is no need to convert it to Excel." },
+    { icon: "lock", title: "Password-protected PDFs", text: "Save a statement password once. It is encrypted at rest and never displayed again." },
+    { icon: "checks", title: "A clear report for every upload", text: "See how many rows were read, retained or skipped, alongside checks of each running balance. Skipped data is never hidden." },
+    { icon: "filter", title: "Smart rules, with your approval", text: "Rules recommend ledger categories for familiar payees. Review and confirm multiple suggestions at once." },
+    { icon: "fileCheck", title: "Invoices and credit notes", text: "Create straightforward GST invoices and credit notes without leaving the dashboard." },
+    { icon: "database", title: "Zoho Books import", text: "Import existing records while retaining their original reference numbers." },
+    { icon: "book", title: "Feeds Books", text: "Business transactions flow into the accounting records used by your store." },
+  ],
+  spotlights: [
+    {
+      eyebrow: "Transparent statement processing",
+      title: "Bank statements can be messy,",
+      highlight: "so every step is visible",
+      text: "Each upload produces a report showing how many rows were processed, which were retained or skipped and why, and whether the running balances reconcile from one row to the next. Any discrepancy is made visible.",
+      points: ["Running balances checked line by line", "Every skipped row includes a reason", "Re-upload statements without creating duplicate transactions"],
+      visual: {
+        kind: "hbars",
+        data: {
+          title: "Statement report · SBI Savings · August",
+          items: [
+            { label: "Rows processed", value: 186, tone: "gray" },
+            { label: "Transactions retained", value: 182, tone: "green" },
+            { label: "Skipped (headers and totals)", value: 4, tone: "gray" },
+            { label: "Failed balance checks", value: 0, display: "0" },
+          ],
+        },
+      },
+    },
+    {
+      eyebrow: "Designed for business owners",
+      title: "Personal and business finances,",
+      highlight: "clearly separated",
+      text: "Personal and business funds may belong to the same owner, but they serve different purposes. Label each account accordingly and review both in one place without mixing personal spending into business accounts.",
+      points: ["Every account labelled by ownership purpose", "Business transactions feed directly into Books", "Personal transactions remain separate"],
+      visual: { kind: "reconcile", host: "finance.gc.mw · accounts" },
+    },
+  ],
+  steps: [
+    { title: "Add your bank and cash accounts", text: "Set up bank, card and cash accounts with opening balances and a personal or business label." },
+    { title: "Save statement passwords", text: "Save each account’s password once; it is stored securely in encrypted form." },
+    { title: "Upload statements", text: "Upload monthly PDF or CSV statements and review the processing report." },
+    { title: "Book and review", text: "Approve suggested matches, record expenses and share the records with your CA." },
+  ],
+  connects: [
+    { slug: "books", for: "Business transactions, invoices and credit notes" },
+    { slug: "growcord-id", for: "Secure access for you and your CA" },
+    { slug: "insights", for: "Spending summaries and cash-flow insights" },
+  ],
+  compare: {
+    them: "Banking apps and spreadsheets",
+    rows: [
+      ["Accounts from all your banks in one view", true, false],
+      ["Read password-protected PDF statements directly", true, false],
+      ["Detailed report for every statement row", true, false],
+      ["Personal and business accounts kept separate", true, "Manual"],
+      ["Smart rules, with your approval bookings", true, false],
+      ["Connects to GST accounting", true, false],
+    ],
+  },
+  principles: [
+    { icon: "lock", title: "Your statement passwords stay private", text: "Statement passwords are encrypted and cannot be viewed again after they are saved." },
+    { icon: "eye", title: "Every skipped row is accounted for", text: "The report identifies each skipped row and explains why it was excluded." },
+    { icon: "shield", title: "Your data stays within your organisation", text: "Each organisation’s data is stored in a separate database." },
+    { icon: "userCheck", title: "You approve every transaction match", text: "Suggested categories or matches are not recorded until you approve them." },
+  ],
+  roadmap: ["Bank-specific layouts verified for more banks", "Account Aggregator feeds", "Cash-flow forecast"],
+  pricing: { title: "Free during the beta period", text: "Growcord Finance is currently in beta and available to Growcord organisations on request. Contact us to enable it for your account.", cta: { label: "Request beta access", href: "/contact-us?interest=finance" } },
+  faqs: [
+    { q: "Which banks are supported by Growcord Finance?", a: "You can upload PDF and CSV statements. Templates have been prepared for Axis, SBI, DCB and Slice, and are being validated against real customer statements throughout the beta." },
+    { q: "Can it read password-protected statement PDFs?", a: "Yes. Save the password to the account once. It is encrypted, never displayed, and used to open statements for that account." },
+    { q: "How do I know nothing was missed?", a: "Every upload includes a report of processed, retained and skipped rows, with reasons for skipped data. The system also checks that each running balance follows correctly from the previous one." },
+    { q: "Can I keep personal and business accounts separate?", a: "Yes. Label each account as personal or business. Only business transactions are passed into your accounting records." },
+    { q: "Is Finance a replacement for Books?", a: "No. Finance gives business owners a consolidated view of their accounts and statements, while Books manages GST accounting. Finance feeds relevant business transactions into Books." },
+    { q: "Is it available now?", a: "Finance is currently in beta for Growcord organisations. Contact us to request access for your account." },
+  ],
+};

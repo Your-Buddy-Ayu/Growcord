@@ -1,0 +1,31 @@
+
+
+import Calculator from "@/components/calculator/Calculator";
+
+const CalculatorPage = () => {
+    return (
+        <Calculator />
+    );
+};
+
+export async function generateStaticParams() {
+    const steps = [
+        [], // /calculator
+        ['step1'],
+        ['step2'],
+        ['step3'],
+        ['step4'],
+        ['step5'],
+        ['step6'],
+        ['step7'],
+        ['step8'],
+        ['step9'],
+        ['summary']
+    ];
+
+    return steps.map((step) => ({
+        step: step,
+    }));
+}
+
+export default CalculatorPage;
